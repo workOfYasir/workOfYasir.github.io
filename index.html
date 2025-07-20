@@ -118,7 +118,7 @@
                 </div>
             </div>
         </header>
-        <div class="copy-bottom white boxed">© Yasir 2024.</div>
+        <div class="copy-bottom white boxed">© Yasir <span id="year"></span></div>
         <div class="social-list social-list-bottom boxed">
             <a href="https://www.linkedin.com/in/work-of-yasir/" class="icon ion-social-linkedin"></a>
         </div>
@@ -744,6 +744,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js" integrity="sha512-Cvxz1E4gCrYKQfz6Ne+VoDiiLrbFBvc6BPh4iyKo2/ICdIodfgc5Q9cBjRivfQNUXBCEnQWcEInSXsvlNHY/ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/scripts.js"></script>
     <script src="js/experience.js"></script>
+    <script>
+      (function ($) {
+        'use strict';
+        $(window).on('load', function () {
+          $('#year').text(new Date().getFullYear());
+        });
+      })(jQuery);
+    </script>
 </body>
 
 <!-- Mirrored from paul-themes.com/html/Yasir/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Mar 2022 20:05:55 GMT -->
